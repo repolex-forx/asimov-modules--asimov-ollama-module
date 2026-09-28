@@ -1,0 +1,17 @@
+[2026-09-28T07:05:12Z] === ENRICH ITERATION 1 START | repo=asimov-modules/asimov-ollama-module sha=b24037e8 ===
+[2026-09-28T07:05:12Z] [iter=1] PHASE START: enrich repo=asimov-modules/asimov-ollama-module sha=b24037e8 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/b24037e8-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/b24037e8995a22f12b2ed020d39dfa09aea504bf.nq.gz
+[2026-09-28T07:05:24Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=80 MB
+[2026-09-28T07:05:25Z] [iter=1] AST store loaded triples=6999 load_secs=0 mem_mb=97 MB
+[2026-09-28T07:05:25Z] [iter=1] Step 2: Finding LSP targets mem_mb=97 MB
+[2026-09-28T07:05:25Z] [iter=1] LSP targets found call_sites=81 imports=3 extends=0 implements=0 secs=0
+[2026-09-28T07:05:25Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=98 MB
+[2026-09-28T07:05:25Z] [iter=1] Position index built positions=469 nodes_with_types=594 secs=0 mem_mb=98 MB
+[2026-09-28T07:05:25Z] [iter=1] Step 3: Starting LSP resolution mem_mb=98 MB already_completed_types=[] already_completed_files=0
+[2026-09-28T07:05:25Z] [iter=1] Resolving target type target_type=call_site count=81
+[2026-09-28T07:05:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.7 files_done=1 resolved=15 errors=0 current=src/prompter/main.rs
+[2026-09-28T07:05:54Z] [iter=1] Target type resolved target_type=call_site resolved=50 errors=1 secs=30 mem_mb=98 MB
+[2026-09-28T07:05:54Z] [iter=1] Resolving target type target_type=import_statement count=3
+[2026-09-28T07:06:01Z] [iter=1] Target type resolved target_type=import_statement resolved=3 errors=0 secs=7 mem_mb=98 MB
+[2026-09-28T07:06:13Z] [iter=1] Step 5: Writing final enrichment file triples=662
+[2026-09-28T07:06:13Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/b24037e8995a22f12b2ed020d39dfa09aea504bf.nq.gz size_kb=8
+[2026-09-28T07:06:13Z] [iter=1] PHASE END: enrich elapsed_s=62 elapsed_min=1.0 total_triples=662
