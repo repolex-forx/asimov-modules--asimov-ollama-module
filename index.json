@@ -1,0 +1,11 @@
+{
+  "org": "asimov-modules",
+  "repo": "asimov-ollama-module",
+  "versions": [
+    {
+      "commit": "b24037e8995a22f12b2ed020d39dfa09aea504bf",
+      "tag": "0.0.3",
+      "parsed_at": "2026-09-28T07:07:14.770416+00:00"
+    }
+  ]
+}
